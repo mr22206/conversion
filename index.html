@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Theorique</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>AAV</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14580,151 +14580,150 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="1.-D%C3%A9finir-les-mots-cl%C3%A9s">1. D&#233;finir les mots cl&#233;s<a class="anchor-link" href="#1.-D%C3%A9finir-les-mots-cl%C3%A9s">&#182;</a></h2><h3 id="D%C3%A9finition">D&#233;finition<a class="anchor-link" href="#D%C3%A9finition">&#182;</a></h3><p>Les mots-clés (ou "keywords") sont des termes réservés dans un langage de programmation. Ils ont des significations spécifiques et sont utilisés pour structurer et contrôler le flux d'un programme. Par exemple, dans le langage C, des mots-clés comme <code>if</code>, <code>else</code>, <code>while</code>, <code>return</code> et <code>void</code> sont utilisés pour définir la logique de contrôle et la structure des fonctions.</p>
-<h3 id="Exemple">Exemple<a class="anchor-link" href="#Exemple">&#182;</a></h3><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// &#39;void&#39; est un mot-clé indiquant que la fonction ne retourne rien</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="c1">// &#39;int&#39; est un mot-clé pour définir un entier</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// &#39;if&#39; est un mot-clé pour une condition</span>
-<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Positive number</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-<h3 id="Sch%C3%A9ma">Sch&#233;ma<a class="anchor-link" href="#Sch%C3%A9ma">&#182;</a></h3>
-<pre><code>+--------------+
-|   Mots-Clés  |
-+--------------+
-|     if       |
-|     else     |
-|     while    |
-|     return   |
-|     void     |
-|     int      |
-+--------------+</code></pre>
 <hr>
-<h2 id="2.-Zone-m%C3%A9moire">2. Zone m&#233;moire<a class="anchor-link" href="#2.-Zone-m%C3%A9moire">&#182;</a></h2><h3 id="D%C3%A9finition">D&#233;finition<a class="anchor-link" href="#D%C3%A9finition">&#182;</a></h3><p>La zone mémoire fait référence à la manière dont la mémoire d'un ordinateur est organisée pour exécuter un programme. La mémoire est généralement divisée en plusieurs zones, y compris :</p>
-<ul>
-<li><strong>Mémoire statique</strong> : Contient les variables globales et les variables statiques.</li>
-<li><strong>Mémoire automatique</strong> : Contient les variables locales à chaque fonction (stack).</li>
-<li><strong>Mémoire dynamique</strong> : Utilisée pour les allocations de mémoire dynamique (heap).</li>
-</ul>
-<h3 id="Exemple">Exemple<a class="anchor-link" href="#Exemple">&#182;</a></h3><ul>
-<li><strong>Mémoire Statique</strong> : Variables globales déclarées à l'extérieur de toute fonction.</li>
-<li><strong>Mémoire Automatique</strong> : Variables locales déclarées dans une fonction.</li>
-<li><strong>Mémoire Dynamique</strong> : Utilisation de <code>malloc</code> pour allouer de la mémoire à l'exécution.</li>
+<h2 id="%5B2%5D-R%C3%B4le-de-la-pile-d'ex%C3%A9cution-(syst%C3%A8me)">[2] R&#244;le de la pile d'ex&#233;cution (syst&#232;me)<a class="anchor-link" href="#%5B2%5D-R%C3%B4le-de-la-pile-d'ex%C3%A9cution-(syst%C3%A8me)">&#182;</a></h2><h3 id="D%C3%A9finition">D&#233;finition<a class="anchor-link" href="#D%C3%A9finition">&#182;</a></h3><p>La pile d'exécution est une structure de données utilisée par le système pour gérer les appels de fonctions et les variables locales. Elle permet de garder la trace des fonctions en cours d'exécution et de leur contexte.</p>
+<h3 id="R%C3%B4le">R&#244;le<a class="anchor-link" href="#R%C3%B4le">&#182;</a></h3><ul>
+<li><strong>Gestion des appels de fonction</strong> : Lorsqu'une fonction est appelée, un cadre (ou "frame") est créé sur la pile. Ce cadre contient les paramètres de la fonction, les variables locales et l'adresse de retour (le point où reprendre l'exécution après la fin de la fonction).</li>
+<li><strong>Durée de vie des variables locales</strong> : Les variables locales sont stockées dans la pile et sont automatiquement désallouées lorsque la fonction se termine.</li>
+<li><strong>Contrôle de la récursivité</strong> : La pile permet également de gérer les appels récursifs, car chaque appel de fonction dispose de son propre cadre.</li>
 </ul>
 <h3 id="Sch%C3%A9ma">Sch&#233;ma<a class="anchor-link" href="#Sch%C3%A9ma">&#182;</a></h3>
 <pre><code>+-------------------+
-|  Mémoire Statique |
-|-------------------|
-|   Variables       |
-|   Globales        |
+|    Pile d'Exécution    |
 +-------------------+
-|  Mémoire Automatique  |
-|-------------------|
-|   Variables       |
-|   Locales         |
+|  Frame de Fonction C   |  &lt;- En cours d'exécution
 +-------------------+
-|  Mémoire Dynamique |
-|-------------------|
-|   Allocation via  |
-|   malloc/free     |
+|  Frame de Fonction B   |
++-------------------+
+|  Frame de Fonction A   |  &lt;- Bas de la pile
 +-------------------+</code></pre>
 <hr>
-<h2 id="3.-Gestion-de-la-pile">3. Gestion de la pile<a class="anchor-link" href="#3.-Gestion-de-la-pile">&#182;</a></h2><h3 id="D%C3%A9finition">D&#233;finition<a class="anchor-link" href="#D%C3%A9finition">&#182;</a></h3><p>La gestion de la pile fait référence à la manière dont les appels de fonction sont organisés et gérés en mémoire. La pile (ou "stack") utilise le principe LIFO (Last In, First Out) pour gérer les appels de fonctions, ce qui signifie que la dernière fonction appelée est la première à être terminée.</p>
-<h3 id="Exemple">Exemple<a class="anchor-link" href="#Exemple">&#182;</a></h3><p>Lorsqu'une fonction est appelée, un cadre est créé sur la pile contenant les paramètres de la fonction et les variables locales. Quand la fonction se termine, le cadre est retiré de la pile.</p>
-<h3 id="Sch%C3%A9ma">Sch&#233;ma<a class="anchor-link" href="#Sch%C3%A9ma">&#182;</a></h3>
-<pre><code>+-----------+
-| Fonction C |
-+-----------+  &lt;- En cours d'exécution
-| Fonction B |
-+-----------+
-| Fonction A |
-+-----------+  &lt;- Bas de la pile</code></pre>
-<hr>
-<h2 id="4.-Biblioth%C3%A8que">4. Biblioth&#232;que<a class="anchor-link" href="#4.-Biblioth%C3%A8que">&#182;</a></h2><h3 id="D%C3%A9finition">D&#233;finition<a class="anchor-link" href="#D%C3%A9finition">&#182;</a></h3><p>Une bibliothèque est un ensemble de fonctions préécrites et de routines que les programmeurs peuvent utiliser pour effectuer des tâches spécifiques sans avoir à écrire tout le code eux-mêmes. Les bibliothèques peuvent inclure des fonctionnalités pour la manipulation de chaînes, les opérations mathématiques, l'accès aux fichiers, etc.</p>
-<h3 id="Exemple">Exemple<a class="anchor-link" href="#Exemple">&#182;</a></h3><ul>
-<li>En C, la bibliothèque standard <code>stdio.h</code> contient des fonctions pour l'entrée/sortie, comme <code>printf</code> et <code>scanf</code>.</li>
-<li>En Python, la bibliothèque <code>math</code> offre des fonctions mathématiques comme <code>sqrt()</code> pour la racine carrée.</li>
-</ul>
-<h3 id="Sch%C3%A9ma">Sch&#233;ma<a class="anchor-link" href="#Sch%C3%A9ma">&#182;</a></h3>
-<pre><code>+-----------------+
-|    Bibliothèque |
-+-----------------+
-|     stdio.h     |
-|     math        |
-|     string      |
-|     etc.        |
-+-----------------+</code></pre>
-<hr>
-<h2 id="5.-Pile">5. Pile<a class="anchor-link" href="#5.-Pile">&#182;</a></h2><h3 id="D%C3%A9finition">D&#233;finition<a class="anchor-link" href="#D%C3%A9finition">&#182;</a></h3><p>Une pile est une structure de données qui suit le principe LIFO. Elle est utilisée pour gérer les appels de fonction, les retours de fonctions, et stocker des données temporairement. Les opérations principales sur une pile sont <code>push</code> (ajouter un élément) et <code>pop</code> (retirer le dernier élément ajouté).</p>
-<h3 id="Exemple">Exemple<a class="anchor-link" href="#Exemple">&#182;</a></h3><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-<span class="cp">#define MAX 10</span>
-
-<span class="kt">int</span><span class="w"> </span><span class="n">stack</span><span class="p">[</span><span class="n">MAX</span><span class="p">];</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">top</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
-
-<span class="kt">void</span><span class="w"> </span><span class="nf">push</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">top</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">MAX</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Stack overflow</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="k">return</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="n">stack</span><span class="p">[</span><span class="o">++</span><span class="n">top</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
+<h2 id="%5B3%5D-Mod%C3%A9lisation-du-processus-d'appel-de-fonction-avec-passage-de-param%C3%A8tre(s)-au-niveau-m%C3%A9moire">[3] Mod&#233;lisation du processus d'appel de fonction avec passage de param&#232;tre(s) au niveau m&#233;moire<a class="anchor-link" href="#%5B3%5D-Mod%C3%A9lisation-du-processus-d'appel-de-fonction-avec-passage-de-param%C3%A8tre(s)-au-niveau-m%C3%A9moire">&#182;</a></h2><h3 id="D%C3%A9finition">D&#233;finition<a class="anchor-link" href="#D%C3%A9finition">&#182;</a></h3><p>Lorsqu'une fonction est appelée, le système doit passer les paramètres à cette fonction. Cela peut se faire de différentes manières, comme par valeur ou par référence.</p>
+<h3 id="Processus-d'appel-de-fonction">Processus d'appel de fonction<a class="anchor-link" href="#Processus-d'appel-de-fonction">&#182;</a></h3><ol>
+<li><strong>Préparation des paramètres</strong> : Les arguments sont placés dans la pile (ou dans des registres selon la convention d'appel).</li>
+<li><strong>Création du cadre de fonction</strong> : Un nouveau cadre est créé sur la pile pour la fonction appelée.</li>
+<li><strong>Exécution de la fonction</strong> : La fonction est exécutée avec les paramètres fournis.</li>
+<li><strong>Retour et nettoyage</strong> : Lorsque la fonction se termine, le cadre est supprimé de la pile, et le contrôle revient à l'appelant.</li>
+</ol>
+<h3 id="Exemple">Exemple<a class="anchor-link" href="#Exemple">&#182;</a></h3><h4 id="Passage-par-valeur">Passage par valeur<a class="anchor-link" href="#Passage-par-valeur">&#182;</a></h4><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">increment</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">x</span><span class="o">++</span><span class="p">;</span><span class="w"> </span><span class="c1">// Modifie une copie</span>
 <span class="p">}</span>
 
-<span class="kt">int</span><span class="w"> </span><span class="nf">pop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">top</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Stack underflow</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">stack</span><span class="p">[</span><span class="n">top</span><span class="o">--</span><span class="p">];</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="w">    </span><span class="n">increment</span><span class="p">(</span><span class="n">a</span><span class="p">);</span><span class="w"> </span><span class="c1">// &#39;a&#39; reste 5</span>
+<span class="p">}</span>
+</pre></div>
+<h4 id="Passage-par-r%C3%A9f%C3%A9rence">Passage par r&#233;f&#233;rence<a class="anchor-link" href="#Passage-par-r%C3%A9f%C3%A9rence">&#182;</a></h4><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">increment</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">(</span><span class="o">*</span><span class="n">x</span><span class="p">)</span><span class="o">++</span><span class="p">;</span><span class="w"> </span><span class="c1">// Modifie la valeur d&#39;origine</span>
+<span class="p">}</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="w">    </span><span class="n">increment</span><span class="p">(</span><span class="o">&amp;</span><span class="n">a</span><span class="p">);</span><span class="w"> </span><span class="c1">// &#39;a&#39; devient 6</span>
 <span class="p">}</span>
 </pre></div>
 <h3 id="Sch%C3%A9ma">Sch&#233;ma<a class="anchor-link" href="#Sch%C3%A9ma">&#182;</a></h3>
-<pre><code>+-----------+
-|   Pile    |
-+-----------+
-|   Élément |
-|    1      |
-+-----------+
-|   Élément |
-|    2      |
-+-----------+
-|   Élément |
-|    3      |
-+-----------+</code></pre>
+<pre><code>Appel par valeur :
++------------------+
+|   Pile           |
++------------------+
+|  Frame pour main |
++------------------+
+|  a = 5          |  &lt;- a est passé par valeur
++------------------+
+|  Frame pour increment |
+|  x (copie de a)  |  
++------------------+
+
+Appel par référence :
++------------------+
+|   Pile           |
++------------------+
+|  Frame pour main |
++------------------+
+|  a = 5          |
+|  &amp;a (adresse)   |  &lt;- a est passé par référence
++------------------+
+|  Frame pour increment |
+|  x (adresse de a)   |
++------------------+</code></pre>
 <hr>
-<h2 id="6.-Allocation-dynamique">6. Allocation dynamique<a class="anchor-link" href="#6.-Allocation-dynamique">&#182;</a></h2><h3 id="D%C3%A9finition">D&#233;finition<a class="anchor-link" href="#D%C3%A9finition">&#182;</a></h3><p>L'allocation dynamique permet de réserver de la mémoire à l'exécution, ce qui permet de créer des structures de données de taille variable. Cela est souvent réalisé via des fonctions comme <code>malloc</code>, <code>calloc</code>, <code>realloc</code> et <code>free</code> en C.</p>
+<h2 id="%5B4%5D-S%C3%A9lection-du-type-de-passage-de-param%C3%A8tre(s)">[4] S&#233;lection du type de passage de param&#232;tre(s)<a class="anchor-link" href="#%5B4%5D-S%C3%A9lection-du-type-de-passage-de-param%C3%A8tre(s)">&#182;</a></h2><h3 id="D%C3%A9finition">D&#233;finition<a class="anchor-link" href="#D%C3%A9finition">&#182;</a></h3><p>Le type de passage de paramètres détermine comment les arguments sont transférés aux fonctions, influençant ainsi la manière dont les modifications apportées dans la fonction affectent les variables d'origine.</p>
+<h3 id="Types-de-passage">Types de passage<a class="anchor-link" href="#Types-de-passage">&#182;</a></h3><ol>
+<li><p><strong>Passage par valeur</strong> :</p>
+<ul>
+<li><strong>Description</strong> : Une copie de la valeur est transmise à la fonction. Les modifications dans la fonction n'affectent pas la variable d'origine.</li>
+<li><strong>Utilisation</strong> : Utile pour les types de données primitifs (int, char, etc.) lorsque la protection de la valeur d'origine est requise.</li>
+</ul>
+</li>
+<li><p><strong>Passage par référence</strong> :</p>
+<ul>
+<li><strong>Description</strong> : Une référence (adresse) de la variable est transmise. Les modifications affectent directement la variable d'origine.</li>
+<li><strong>Utilisation</strong> : Utile pour les structures de données plus complexes (tableaux, structures) où il est nécessaire de modifier l'original sans copier des données.</li>
+</ul>
+</li>
+</ol>
+<h3 id="Exemple">Exemple<a class="anchor-link" href="#Exemple">&#182;</a></h3><div class="highlight"><pre><span></span><span class="c1">// Passage par valeur</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"> </span><span class="c1">// ne modifie pas les variables d&#39;origine</span>
+<span class="p">}</span>
+
+<span class="c1">// Passage par référence</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="o">*</span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="o">*</span><span class="n">b</span><span class="p">;</span><span class="w"> </span><span class="c1">// modifie les variables d&#39;origine</span>
+<span class="p">}</span>
+</pre></div>
+<hr>
+<h2 id="%5B5%5D-Structuration-d'un-programme-%C3%A0-l'aide-de-fonctions-et-de-biblioth%C3%A8ques">[5] Structuration d'un programme &#224; l'aide de fonctions et de biblioth&#232;ques<a class="anchor-link" href="#%5B5%5D-Structuration-d'un-programme-%C3%A0-l'aide-de-fonctions-et-de-biblioth%C3%A8ques">&#182;</a></h2><h3 id="D%C3%A9finition">D&#233;finition<a class="anchor-link" href="#D%C3%A9finition">&#182;</a></h3><p>Structurer un programme implique de diviser le code en fonctions et d'utiliser des bibliothèques pour réutiliser le code existant, ce qui facilite la maintenance et améliore la lisibilité.</p>
+<h3 id="%C3%89tapes-de-structuration">&#201;tapes de structuration<a class="anchor-link" href="#%C3%89tapes-de-structuration">&#182;</a></h3><ol>
+<li><strong>Identification des tâches</strong> : Diviser le programme en tâches logiques qui peuvent être encapsulées dans des fonctions.</li>
+<li><strong>Écriture des fonctions</strong> : Créer des fonctions qui prennent des paramètres, effectuent des opérations et retournent des valeurs.</li>
+<li><strong>Utilisation de bibliothèques</strong> : Importer des bibliothèques pour utiliser des fonctions prédéfinies, ce qui évite de réécrire du code.</li>
+</ol>
 <h3 id="Exemple">Exemple<a class="anchor-link" href="#Exemple">&#182;</a></h3><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdlib.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;math.h&gt;</span><span class="c1"> // Utilisation de la bibliothèque mathématique</span>
+
+<span class="c1">// Fonction pour calculer le carré</span>
+<span class="kt">double</span><span class="w"> </span><span class="nf">square</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+<span class="p">}</span>
 
 <span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">array</span><span class="p">;</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
-
-<span class="w">    </span><span class="c1">// Allocation dynamique</span>
-<span class="w">    </span><span class="n">array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">));</span>
-
-<span class="w">    </span><span class="c1">// Vérification de l&#39;allocation</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">array</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Memory allocation failed</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="c1">// Utilisation du tableau</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
-<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="n">free</span><span class="p">(</span><span class="n">array</span><span class="p">);</span><span class="w"> </span><span class="c1">// Libération de la mémoire</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5.0</span><span class="p">;</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Le carré de %.2f est %.2f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">num</span><span class="p">,</span><span class="w"> </span><span class="n">square</span><span class="p">(</span><span class="n">num</span><span class="p">));</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Racine carrée de %.2f est %.2f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">num</span><span class="p">,</span><span class="w"> </span><span class="n">sqrt</span><span class="p">(</span><span class="n">num</span><span class="p">));</span><span class="w"> </span><span class="c1">// Utilisation de la fonction sqrt de la bibliothèque math</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 <h3 id="Sch%C3%A9ma">Sch&#233;ma<a class="anchor-link" href="#Sch%C3%A9ma">&#182;</a></h3>
 <pre><code>+-------------------+
-|  Mémoire Dynamique |
-|-------------------|
-|   Allocation via  |
-|   malloc/free     |
+|    Programme      |
++-------------------+
+|   Main            |
+|   |-&gt; square()    |  &lt;- Fonction personnalisée
+|   |-&gt; sqrt()      |  &lt;- Fonction de bibliothèque
++-------------------+</code></pre>
+<hr>
+<h2 id="%5B6%5D-Analyse-d'un-programme-%C3%A0-l'aide-d'un-outil-de-d%C3%A9bogage">[6] Analyse d'un programme &#224; l'aide d'un outil de d&#233;bogage<a class="anchor-link" href="#%5B6%5D-Analyse-d'un-programme-%C3%A0-l'aide-d'un-outil-de-d%C3%A9bogage">&#182;</a></h2><h3 id="D%C3%A9finition">D&#233;finition<a class="anchor-link" href="#D%C3%A9finition">&#182;</a></h3><p>Le débogage est le processus de recherche et de correction des erreurs (bugs) dans un programme. Les outils de débogage permettent d'analyser le comportement d'un programme à l'exécution pour identifier les écarts par rapport à l'algorithme prévu.</p>
+<h3 id="%C3%89tapes-d'analyse-avec-un-d%C3%A9bogueur">&#201;tapes d'analyse avec un d&#233;bogueur<a class="anchor-link" href="#%C3%89tapes-d'analyse-avec-un-d%C3%A9bogueur">&#182;</a></h3><ol>
+<li><strong>Définir des points d'arrêt</strong> : Marquer des lignes spécifiques où l'exécution doit s'arrêter pour examiner l'état des variables.</li>
+<li><strong>Exécuter le programme</strong> : Lancer le programme en mode débogage pour observer le comportement en temps réel.</li>
+<li><strong>Inspecter les variables</strong> : Vérifier les valeurs des variables et la pile d'exécution pour identifier des anomalies.</li>
+<li><strong>Suivre l'exécution</strong> : Observer le flux d'exécution pour s'assurer que le programme suit la logique prévue.</li>
+</ol>
+<h3 id="Exemple">Exemple<a class="anchor-link" href="#Exemple">&#182;</a></h3><p>Si une fonction qui additionne deux nombres retourne un résultat incorrect, un débogueur peut être utilisé pour :</p>
+<ul>
+<li>Mettre un point d'arrêt à l'entrée de la fonction.</li>
+<li>Vérifier les valeurs des paramètres.</li>
+<li>Suivre les calculs internes et comparer les résultats à ceux attendus.</li>
+</ul>
+<h3 id="Sch%C3%A9ma">Sch&#233;ma<a class="anchor-link" href="#Sch%C3%A9ma">&#182;</a></h3>
+<pre><code>+-------------------+
+|    Programme      |
++-------------------+
+|   Main            |  &lt;- Point d'arrêt ici
+|   |-&gt; add()       |  
 +-------------------+</code></pre>
 <hr>
 
