@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MotsCle</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Theorique</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14580,109 +14580,153 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="1.-V.-Statique-/-local">1. V. Statique / local<a class="anchor-link" href="#1.-V.-Statique-/-local">&#182;</a></h3><ul>
-<li><p><strong>Statique</strong> :</p>
+<h2 id="1.-D%C3%A9finir-les-mots-cl%C3%A9s">1. D&#233;finir les mots cl&#233;s<a class="anchor-link" href="#1.-D%C3%A9finir-les-mots-cl%C3%A9s">&#182;</a></h2><h3 id="D%C3%A9finition">D&#233;finition<a class="anchor-link" href="#D%C3%A9finition">&#182;</a></h3><p>Les mots-clés (ou "keywords") sont des termes réservés dans un langage de programmation. Ils ont des significations spécifiques et sont utilisés pour structurer et contrôler le flux d'un programme. Par exemple, dans le langage C, des mots-clés comme <code>if</code>, <code>else</code>, <code>while</code>, <code>return</code> et <code>void</code> sont utilisés pour définir la logique de contrôle et la structure des fonctions.</p>
+<h3 id="Exemple">Exemple<a class="anchor-link" href="#Exemple">&#182;</a></h3><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// &#39;void&#39; est un mot-clé indiquant que la fonction ne retourne rien</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="c1">// &#39;int&#39; est un mot-clé pour définir un entier</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// &#39;if&#39; est un mot-clé pour une condition</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Positive number</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<h3 id="Sch%C3%A9ma">Sch&#233;ma<a class="anchor-link" href="#Sch%C3%A9ma">&#182;</a></h3>
+<pre><code>+--------------+
+|   Mots-Clés  |
++--------------+
+|     if       |
+|     else     |
+|     while    |
+|     return   |
+|     void     |
+|     int      |
++--------------+</code></pre>
+<hr>
+<h2 id="2.-Zone-m%C3%A9moire">2. Zone m&#233;moire<a class="anchor-link" href="#2.-Zone-m%C3%A9moire">&#182;</a></h2><h3 id="D%C3%A9finition">D&#233;finition<a class="anchor-link" href="#D%C3%A9finition">&#182;</a></h3><p>La zone mémoire fait référence à la manière dont la mémoire d'un ordinateur est organisée pour exécuter un programme. La mémoire est généralement divisée en plusieurs zones, y compris :</p>
 <ul>
-<li><strong>Définition</strong> : Une variable statique conserve sa valeur entre les appels d'une fonction. Elle est déclarée avec le mot-clé <code>static</code> dans de nombreux langages de programmation, comme le C ou le C++.</li>
-<li><p><strong>Exemple</strong> :</p>
-<div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">increment</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// Variable statique</span>
-<span class="w">    </span><span class="n">count</span><span class="o">++</span><span class="p">;</span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">count</span><span class="p">);</span>
+<li><strong>Mémoire statique</strong> : Contient les variables globales et les variables statiques.</li>
+<li><strong>Mémoire automatique</strong> : Contient les variables locales à chaque fonction (stack).</li>
+<li><strong>Mémoire dynamique</strong> : Utilisée pour les allocations de mémoire dynamique (heap).</li>
+</ul>
+<h3 id="Exemple">Exemple<a class="anchor-link" href="#Exemple">&#182;</a></h3><ul>
+<li><strong>Mémoire Statique</strong> : Variables globales déclarées à l'extérieur de toute fonction.</li>
+<li><strong>Mémoire Automatique</strong> : Variables locales déclarées dans une fonction.</li>
+<li><strong>Mémoire Dynamique</strong> : Utilisation de <code>malloc</code> pour allouer de la mémoire à l'exécution.</li>
+</ul>
+<h3 id="Sch%C3%A9ma">Sch&#233;ma<a class="anchor-link" href="#Sch%C3%A9ma">&#182;</a></h3>
+<pre><code>+-------------------+
+|  Mémoire Statique |
+|-------------------|
+|   Variables       |
+|   Globales        |
++-------------------+
+|  Mémoire Automatique  |
+|-------------------|
+|   Variables       |
+|   Locales         |
++-------------------+
+|  Mémoire Dynamique |
+|-------------------|
+|   Allocation via  |
+|   malloc/free     |
++-------------------+</code></pre>
+<hr>
+<h2 id="3.-Gestion-de-la-pile">3. Gestion de la pile<a class="anchor-link" href="#3.-Gestion-de-la-pile">&#182;</a></h2><h3 id="D%C3%A9finition">D&#233;finition<a class="anchor-link" href="#D%C3%A9finition">&#182;</a></h3><p>La gestion de la pile fait référence à la manière dont les appels de fonction sont organisés et gérés en mémoire. La pile (ou "stack") utilise le principe LIFO (Last In, First Out) pour gérer les appels de fonctions, ce qui signifie que la dernière fonction appelée est la première à être terminée.</p>
+<h3 id="Exemple">Exemple<a class="anchor-link" href="#Exemple">&#182;</a></h3><p>Lorsqu'une fonction est appelée, un cadre est créé sur la pile contenant les paramètres de la fonction et les variables locales. Quand la fonction se termine, le cadre est retiré de la pile.</p>
+<h3 id="Sch%C3%A9ma">Sch&#233;ma<a class="anchor-link" href="#Sch%C3%A9ma">&#182;</a></h3>
+<pre><code>+-----------+
+| Fonction C |
++-----------+  &lt;- En cours d'exécution
+| Fonction B |
++-----------+
+| Fonction A |
++-----------+  &lt;- Bas de la pile</code></pre>
+<hr>
+<h2 id="4.-Biblioth%C3%A8que">4. Biblioth&#232;que<a class="anchor-link" href="#4.-Biblioth%C3%A8que">&#182;</a></h2><h3 id="D%C3%A9finition">D&#233;finition<a class="anchor-link" href="#D%C3%A9finition">&#182;</a></h3><p>Une bibliothèque est un ensemble de fonctions préécrites et de routines que les programmeurs peuvent utiliser pour effectuer des tâches spécifiques sans avoir à écrire tout le code eux-mêmes. Les bibliothèques peuvent inclure des fonctionnalités pour la manipulation de chaînes, les opérations mathématiques, l'accès aux fichiers, etc.</p>
+<h3 id="Exemple">Exemple<a class="anchor-link" href="#Exemple">&#182;</a></h3><ul>
+<li>En C, la bibliothèque standard <code>stdio.h</code> contient des fonctions pour l'entrée/sortie, comme <code>printf</code> et <code>scanf</code>.</li>
+<li>En Python, la bibliothèque <code>math</code> offre des fonctions mathématiques comme <code>sqrt()</code> pour la racine carrée.</li>
+</ul>
+<h3 id="Sch%C3%A9ma">Sch&#233;ma<a class="anchor-link" href="#Sch%C3%A9ma">&#182;</a></h3>
+<pre><code>+-----------------+
+|    Bibliothèque |
++-----------------+
+|     stdio.h     |
+|     math        |
+|     string      |
+|     etc.        |
++-----------------+</code></pre>
+<hr>
+<h2 id="5.-Pile">5. Pile<a class="anchor-link" href="#5.-Pile">&#182;</a></h2><h3 id="D%C3%A9finition">D&#233;finition<a class="anchor-link" href="#D%C3%A9finition">&#182;</a></h3><p>Une pile est une structure de données qui suit le principe LIFO. Elle est utilisée pour gérer les appels de fonction, les retours de fonctions, et stocker des données temporairement. Les opérations principales sur une pile sont <code>push</code> (ajouter un élément) et <code>pop</code> (retirer le dernier élément ajouté).</p>
+<h3 id="Exemple">Exemple<a class="anchor-link" href="#Exemple">&#182;</a></h3><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<span class="cp">#define MAX 10</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="n">stack</span><span class="p">[</span><span class="n">MAX</span><span class="p">];</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">top</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">push</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">top</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">MAX</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Stack overflow</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">return</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="n">stack</span><span class="p">[</span><span class="o">++</span><span class="n">top</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="c1">// Appels de la fonction</span>
-<span class="n">increment</span><span class="p">();</span><span class="w"> </span><span class="c1">// Affiche 1</span>
-<span class="n">increment</span><span class="p">();</span><span class="w"> </span><span class="c1">// Affiche 2</span>
-<span class="n">increment</span><span class="p">();</span><span class="w"> </span><span class="c1">// Affiche 3</span>
-</pre></div>
-</li>
-<li><strong>Schéma</strong> :
-<pre><code>[Fonction increment]
-      |
-+-----+------+
-|    Compteur   |  (Variable statique : persistante)
-|       0       |
-+---------------+</code></pre>
-</li>
-</ul>
-</li>
-<li><p><strong>Local</strong> :</p>
-<ul>
-<li><strong>Définition</strong> : Une variable locale est définie à l'intérieur d'une fonction et n'est accessible qu'à l'intérieur de cette fonction.</li>
-<li><p><strong>Exemple</strong> :</p>
-<div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">example</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">localVar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="c1">// Variable locale</span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">localVar</span><span class="p">);</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">pop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">top</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Stack underflow</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">stack</span><span class="p">[</span><span class="n">top</span><span class="o">--</span><span class="p">];</span>
 <span class="p">}</span>
+</pre></div>
+<h3 id="Sch%C3%A9ma">Sch&#233;ma<a class="anchor-link" href="#Sch%C3%A9ma">&#182;</a></h3>
+<pre><code>+-----------+
+|   Pile    |
++-----------+
+|   Élément |
+|    1      |
++-----------+
+|   Élément |
+|    2      |
++-----------+
+|   Élément |
+|    3      |
++-----------+</code></pre>
+<hr>
+<h2 id="6.-Allocation-dynamique">6. Allocation dynamique<a class="anchor-link" href="#6.-Allocation-dynamique">&#182;</a></h2><h3 id="D%C3%A9finition">D&#233;finition<a class="anchor-link" href="#D%C3%A9finition">&#182;</a></h3><p>L'allocation dynamique permet de réserver de la mémoire à l'exécution, ce qui permet de créer des structures de données de taille variable. Cela est souvent réalisé via des fonctions comme <code>malloc</code>, <code>calloc</code>, <code>realloc</code> et <code>free</code> en C.</p>
+<h3 id="Exemple">Exemple<a class="anchor-link" href="#Exemple">&#182;</a></h3><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdlib.h&gt;</span>
 
-<span class="c1">// localVar n&#39;est pas accessible ici</span>
-<span class="n">example</span><span class="p">();</span><span class="w"> </span><span class="c1">// Affiche 5</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">array</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Allocation dynamique</span>
+<span class="w">    </span><span class="n">array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">));</span>
+
+<span class="w">    </span><span class="c1">// Vérification de l&#39;allocation</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">array</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Memory allocation failed</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Utilisation du tableau</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">free</span><span class="p">(</span><span class="n">array</span><span class="p">);</span><span class="w"> </span><span class="c1">// Libération de la mémoire</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="2.-Algo-de-lecture">2. Algo de lecture<a class="anchor-link" href="#2.-Algo-de-lecture">&#182;</a></h3><ul>
-<li><strong>Définition</strong> : Un algorithme de lecture est une série d'étapes qui permettent d'extraire des données d'une source, comme un fichier ou une base de données.</li>
-<li><strong>Exemple</strong> : Lecture d'un fichier texte en Python.<div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;fichier.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-      <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file</span><span class="p">:</span>
-          <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>  <span class="c1"># Affiche chaque ligne sans espaces</span>
-</pre></div>
-</li>
-<li><strong>Schéma</strong> :
-<pre><code>  [Fichier]
-    |
-    | (Lecture)
-    v
-  [Algo de lecture] --&gt; [Données extraites]</code></pre>
-</li>
-</ul>
-<h3 id="3.-Pile-d%E2%80%99ex%C3%A9cution">3. Pile d&#8217;ex&#233;cution<a class="anchor-link" href="#3.-Pile-d%E2%80%99ex%C3%A9cution">&#182;</a></h3><ul>
-<li><strong>Définition</strong> : La pile d'exécution est une structure de données utilisée pour gérer les appels de fonction dans un programme. Elle suit le principe LIFO (Last In, First Out).</li>
-<li><strong>Exemple</strong> : Lorsqu'une fonction est appelée, un cadre (ou "frame") est ajouté à la pile contenant des informations sur la fonction en cours d'exécution.</li>
-<li><strong>Schéma</strong> :
-<pre><code>  +-----------+
-  | Fonction C |
-  +-----------+  &lt;- En cours d'exécution
-  | Fonction B |
-  +-----------+
-  | Fonction A |
-  +-----------+  &lt;- Bas de la pile</code></pre>
-</li>
-</ul>
-<h3 id="4.-Tableau-dynamique">4. Tableau dynamique<a class="anchor-link" href="#4.-Tableau-dynamique">&#182;</a></h3><ul>
-<li><strong>Définition</strong> : Un tableau dynamique est une structure de données qui peut changer de taille pendant l'exécution du programme. Contrairement à un tableau statique, qui a une taille fixe, un tableau dynamique peut s'ajuster selon les besoins.</li>
-<li><strong>Exemple</strong> : Utilisation d'un tableau dynamique en C avec <code>malloc</code> :<div class="highlight"><pre><span></span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">malloc</span><span class="p">(</span><span class="n">size</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">));</span><span class="w"> </span><span class="c1">// Alloue un tableau dynamique</span>
-<span class="w">  </span><span class="c1">// Utilisation de l&#39;array</span>
-<span class="w">  </span><span class="n">free</span><span class="p">(</span><span class="n">array</span><span class="p">);</span><span class="w"> </span><span class="c1">// Libération de la mémoire</span>
-</pre></div>
-</li>
-<li><strong>Schéma</strong> :
-<pre><code>  +----------+
-  | Éléments |
-  +----------+   &lt;- Taille dynamique
-  | Éléments |
-  +----------+</code></pre>
-</li>
-</ul>
-<h3 id="5.-Gestion-de-m%C3%A9moire">5. Gestion de m&#233;moire<a class="anchor-link" href="#5.-Gestion-de-m%C3%A9moire">&#182;</a></h3><ul>
-<li><strong>Définition</strong> : La gestion de mémoire fait référence à la manière dont un programme utilise la mémoire de l'ordinateur. Cela inclut l'allocation, la désallocation et l'optimisation de l'utilisation de la mémoire.</li>
-<li><strong>Exemple</strong> : Allocation dynamique de mémoire en C.<div class="highlight"><pre><span></span><span class="kt">int</span><span class="o">*</span><span class="w"> </span><span class="n">array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">malloc</span><span class="p">(</span><span class="mi">10</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">));</span><span class="w"> </span><span class="c1">// Alloue de la mémoire pour 10 entiers</span>
-<span class="w">  </span><span class="c1">// Utilisation du tableau</span>
-<span class="w">  </span><span class="n">free</span><span class="p">(</span><span class="n">array</span><span class="p">);</span><span class="w"> </span><span class="c1">// Libère la mémoire allouée</span>
-</pre></div>
-</li>
-<li><strong>Schéma</strong> :
-<pre><code>  +-------------------+
-  | Mémoire Allouée   |
-  +-------------------+
-  | Programme         |
-  +-------------------+
-  | Mémoire Libre     |
-  +-------------------+</code></pre>
-</li>
-</ul>
+<h3 id="Sch%C3%A9ma">Sch&#233;ma<a class="anchor-link" href="#Sch%C3%A9ma">&#182;</a></h3>
+<pre><code>+-------------------+
+|  Mémoire Dynamique |
+|-------------------|
+|   Allocation via  |
+|   malloc/free     |
++-------------------+</code></pre>
+<hr>
 
 </div>
 </div>
